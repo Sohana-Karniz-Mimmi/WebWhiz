@@ -3,15 +3,11 @@
 :root {
   --background: #fff;
   --primary: #130929;
+  --secondary: #185ad9;
   --paragraph: #64656d;
   --caption: #fba017;
   --color-primary-start: #5f90f0;
   --color-primary-end: #185ad9;
-  --gradient-primary: linear-gradient(
-    to right,
-    var(--color-primary-start),
-    var(--color-primary-end)
-  );
   --font-manrope: 'Manrope', sans-serif;
 }
 
@@ -19,7 +15,9 @@
   --color-background: var(--background);
   --color-foreground: var(--primary);
   --color-primary: var(--primary);
-  --color-secondary: var(--gradient-primary);
+  --color-secondary: var(--secondary);
+  --color-primary-start: var(--color-primary-start);
+  --color-primary-end: var(--color-primary-end);
   --color-body: var(--paragraph);
   --color-caption: var(--caption);
   --font-manrope: var(--font-manrope);
@@ -49,7 +47,7 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .custom_container {
     padding-left: 0;
     padding-right: 0;
