@@ -81,8 +81,12 @@ const HeroImage = () => {
             />
           </div>
           <div className="flex flex-col">
-            <span className="text-base font-semibold leading-[150%]">15,235</span>
-            <span className="text-body text-xs font-normal leading-[160%]">Visitors</span>
+            <span className="text-base font-semibold leading-[150%]">
+              15,235
+            </span>
+            <span className="text-body text-xs font-normal leading-[160%]">
+              Visitors
+            </span>
           </div>
           <div className="flex items-center gap-1 text-primary">
             <Image
@@ -91,7 +95,9 @@ const HeroImage = () => {
               width={12}
               height={12}
             />
-            <span className="text-xs font-medium leading-[160%] text-secondary">25%</span>
+            <span className="text-xs font-medium leading-[160%] text-secondary">
+              25%
+            </span>
           </div>
         </div>
 
@@ -105,8 +111,12 @@ const HeroImage = () => {
             className="flex-shrink-0"
           />
           <div className="flex flex-col">
-            <span className="text-base font-bold leading-[150%]">Albert Flores</span>
-            <span className="text-body text-sm font-medium leading-[160%]">Product Manager</span>
+            <span className="text-base font-bold leading-[150%]">
+              Albert Flores
+            </span>
+            <span className="text-body text-sm font-medium leading-[160%]">
+              Product Manager
+            </span>
           </div>
         </div>
       </div>

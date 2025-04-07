@@ -36,8 +36,8 @@ body {
 .custom_container {
   max-width: 1140px;
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media (min-width: 768px) {
@@ -52,4 +52,27 @@ body {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.custom_scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.custom_scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* For smooth transitions */
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hide scrollbars if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
