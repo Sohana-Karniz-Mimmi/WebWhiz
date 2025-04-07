@@ -8,7 +8,7 @@ import VerticalDivider from "@/ui/VerticalDivider";
 const HeroSection = () => {
   return (
     <section className="custom_container lg:pt-[68px] md:pt-10 mt-8">
-      <div className="flex flex-col lg:flex-row lg:items-center gap-12 md:gap-[70px]">
+      <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:gap-[30] md:gap-[70px]">
         {/* Content */}
         <div className="w-full md:w-[568px]">
           <div className="relative mb-4">

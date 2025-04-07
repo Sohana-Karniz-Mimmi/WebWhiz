@@ -5,6 +5,7 @@ import VerticalDivider from "@/ui/VerticalDivider";
 import Image from "next/image";
 import { useState } from "react";
 import PortfolioSlider from "./PortfolioSlider";
+import GradientHeading from "@/ui/GradientHeading";
 
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState("All Project");
@@ -61,22 +62,7 @@ const Portfolio = () => {
             <div className="md:w-[554px] w-full xl:pt-[3px]">
               <Text variant="title">
                 Discovering digital mastery and
-                <h2 className="relative inline-block xl:pl-3">
-                  <Text
-                    variant="title"
-                    className="relative z-10 bg-gradient-to-r from-primary-start to-primary-end bg-clip-text text-transparent"
-                  >
-                    Creative innovation
-                  </Text>
-                  <Image
-                    src="/images/imagination-bg.svg"
-                    alt=""
-                    width={377}
-                    height={12}
-                    className="absolute bottom-3 object-cover z-0"
-                    priority
-                  />
-                </h2>{" "}
+                <GradientHeading>Creative innovation</GradientHeading>
               </Text>
             </div>
             <div className="flex gap-3 mt-1">
@@ -108,7 +94,7 @@ const Portfolio = () => {
         </div>
 
         {/* Portfolio Slider */}
-          <PortfolioSlider />
+        <PortfolioSlider />
       </div>
     </section>
   );
