@@ -1,12 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import HeroImage from "./HeroImage";
+import Button from "@/ui/Button";
+import Text from "@/ui/Text";
+import VerticalDivider from "@/ui/VerticalDivider";
 
 const HeroSection = () => {
   return (
-    <section className="custom_container pt-[6px]">
-      <div className="flex flex-col md:flex-row items-center gap-5 md:gap-[20px]">
+    <section className="custom_container pt-[68px]">
+      <div className="flex flex-col md:flex-row items-center gap-5 md:gap-[30px]">
         {/* Content */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-[568px]">
           <div className="relative mb-4">
             <h1 className="flex flex-col gap-2 text-5xl md:text-[64px] font-bold leading-[120%]">
               Turning{" "}
@@ -30,42 +34,30 @@ const HeroSection = () => {
 
           {/* Description with vertical border */}
           <div className="flex gap-3 pb-6">
-            <div className="w-3 h-[65px] rounded-lg bg-gradient-to-b from-primary-start to-primary-end mt-[7px]"></div>
-            <p className="text-body text-base font-normal leading-[160%]">
+            <VerticalDivider />
+            <Text>
               Welcome to my digital playground, where creativity knows no
               bounds. I'm a passionate designer and developer on a mission to
               turn innovative ideas into stunning digital realities.
-            </p>
+            </Text>
           </div>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 ">
-            <Link
-              href="/hire"
-              className="text-white text-sm font-medium leading-[160%] flex w-[160px] py-3 px-6 justify-center items-center gap-2.5 rounded-[80px] bg-gradient-to-r from-primary-start to-primary-end hover:opacity-90 transition-opacity duration-200"
-            >
-              Hire Me
+            <Link href="/hire">
+              <Button className="w-[160px]" variant="primary">
+                Hire Me
+              </Button>
             </Link>
-            <Link
-              href="/portfolio"
-              className="text-secondary text-sm font-medium leading-[160%] flex py-3 px-6 justify-center items-center gap-2.5 rounded-[80px] border border-primary-start hover:bg-gray-50 transition-colors duration-200"
-            >
-              View Portfolio
+            <Link href="/portfolio">
+              <Button variant="secondary">View Portfolio</Button>
             </Link>
           </div>
         </div>
 
         {/* Image */}
-        <div className="w-full md:w-1/2">
-          <div className="relative aspect-square w-full h-auto">
-            <Image
-              src="/images/hero.png"
-              alt="Hero Image"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
+        <div className="w-full md:w-[543.5px]">
+          <HeroImage />
         </div>
       </div>
     </section>

@@ -1,3 +1,4 @@
+import Button from "@/ui/Button";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -43,9 +44,7 @@ const Navbar = () => {
           </ul>
 
           {/* Contact Button */}
-          <button className="text-white text-sm font-medium leading-[160%] flex py-3 px-6 justify-center items-center gap-2.5 rounded-[80px] bg-gradient-to-r from-primary-start to-primary-end hover:opacity-90 transition-all duration-200">
-            Contact
-          </button>
+          <Button variant="primary">Contact</Button>
         </div>
 
         {/* Mobile menu button */}
