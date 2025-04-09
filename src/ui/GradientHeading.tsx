@@ -17,13 +17,13 @@ const GradientHeading = ({
   src = "/images/imagination-bg.svg",
   width = 377,
   height = 12,
-  imgClass = "absolute bottom-3 object-cover z-0",
-  className = "relative inline-block xl:pl-3",
-  textClass = "relative z-10 bg-gradient-to-r from-primary-start to-primary-end bg-clip-text text-transparent",
+  imgClass = "",
+  className = "xl:pl-3",
+  textClass = "",
 }: GradientHeadingProps) => {
   return (
-    <h2 className={className}>
-      <Text variant="title" className={textClass}>
+    <h2 className={`relative inline-block ${className}`}>
+      <Text variant="title" className={`relative z-10 bg-gradient-to-r from-primary-start to-primary-end bg-clip-text text-transparent ${textClass}`}>
         {children}
       </Text>
       {src && (
@@ -32,7 +32,7 @@ const GradientHeading = ({
           alt=""
           width={width}
           height={height}
-          className={imgClass}
+          className={`absolute bottom-3 object-cover z-0 ${imgClass}`}
           priority
         />
       )}

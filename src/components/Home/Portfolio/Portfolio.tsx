@@ -18,7 +18,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="relative max-w-[1440px] w-full mx-auto overflow-hidden md:my-[123px] my-8">
+    <section className="relative max-w-[1440px] w-full mx-auto overflow-hidden md:mt-[123px] mt-8">
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
         {/* Main Square Background */}
@@ -53,7 +53,7 @@ const Portfolio = () => {
       </div>
 
       {/* Content Container */}
-      <div className="md:py-20 py-8">
+      <div className="md:pt-20 py-[24px]">
         <div className="custom_container pb-8">
           <Text className="xl:pl-1" variant="caption">
             portfolio
@@ -62,7 +62,7 @@ const Portfolio = () => {
             <div className="md:w-[554px] w-full xl:pt-[3px]">
               <Text variant="title">
                 Discovering digital mastery and
-                <GradientHeading>Creative innovation</GradientHeading>
+                <GradientHeading imgClass="h-[12px]">Creative innovation</GradientHeading>
               </Text>
             </div>
             <div className="flex gap-3 mt-1">
