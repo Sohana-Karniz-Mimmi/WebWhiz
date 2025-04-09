@@ -2,6 +2,7 @@ import GradientHeading from "@/ui/GradientHeading";
 import Text from "@/ui/Text";
 import VerticalDivider from "@/ui/VerticalDivider";
 import React from "react";
+import Skills from "./Skills";
 
 const About = () => {
   return (
@@ -32,6 +33,10 @@ const About = () => {
             </Text>
           </div>
         </div>
+
+        {/* Skill and image */}
+        <Skills />
+        
       </div>
     </div>
   );

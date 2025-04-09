@@ -71,7 +71,7 @@ const PortfolioSlider = () => {
                         <h3 className="text-[20px] font-bold leading-[150%] xl:pl-[2px]">
                           Finance Banking Landing page
                         </h3>
-                        <p className="mt-1 w-[331px] text-[#64656D] text-[14px] font-normal leading-[160%] line-clamp-1">
+                        <p className="mt-1 w-[331px] text-body text-[14px] font-normal leading-[160%] line-clamp-1">
                           In our portfolio section, you'll embark on a visual
                           journey through a meticulously curated gallery that
                           represents.
