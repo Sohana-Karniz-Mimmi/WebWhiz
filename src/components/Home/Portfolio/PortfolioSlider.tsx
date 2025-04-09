@@ -25,10 +25,8 @@ const PortfolioSlider = () => {
 
   return (
     <div className="max-w-[1440px] mx-auto">
-      {/* Slider Container */}
       <div className="relative h-[390px] overflow-hidden">
         <div className="custom_container relative h-full xl:pl-[2px]">
-          {/* Slides Track */}
           <div
             className="flex gap-6 transition-transform duration-300"
             style={{
@@ -52,10 +50,9 @@ const PortfolioSlider = () => {
                   }
                 />
 
-                {/* Special Overlay for slide 3 */}
+                {/* Overlay for slide 3 */}
                 {typeof slide === "object" && index === 2 && (
                   <>
-                    {/* Gradient Overlay Image */}
                     <div className="absolute inset-0 z-10">
                       <Image
                         src={slide.overlay}
@@ -78,7 +75,7 @@ const PortfolioSlider = () => {
                         </p>
                       </div>
 
-                      {/* Icon with gradient background */}
+                      {/* Icon with gradient  */}
                       <div className="flex p-4 justify-center items-center gap-2.5 rounded-[12px] bg-gradient-to-r from-[#5F90F0] to-[#185AD9]">
                         <Image
                           src="/icons/send-white-arrow.svg"
@@ -101,7 +98,6 @@ const PortfolioSlider = () => {
       <div className="custom_container flex justify-between items-center pt-6 px-4">
         <div className="w-[50px]"></div>
 
-        {/* Dots */}
         <div className="flex gap-2 xl:ml-[77px]">
           {slides.slice(0, slides.length - 1).map((_, index) => (
             <button

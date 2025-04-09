@@ -3,15 +3,8 @@ import Image from "next/image";
 const HeroImage = () => {
   return (
     <div className="relative w-[358px] h-[433px] flex-shrink-0 mx-auto">
-      {/* Background Image */}
-      <div
-        className="absolute w-[308px] h-[481px] flex-shrink-0 -z-10"
-        style={{
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-        }}
-      >
+      {/* bg shape image */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[308px] h-[481px] flex-shrink-0 -z-10">
         <Image
           src="/images/hero-bg.png"
           alt="Background decoration"
@@ -20,7 +13,7 @@ const HeroImage = () => {
         />
       </div>
 
-      {/* Top Right Ellipse - hero-ellipse1.svg */}
+      {/* top right circle  */}
       <div className="absolute -top-12 -right-4 w-[64px] h-[64px] flex-shrink-0">
         <Image
           src="/images/hero-ellipse1.svg"
@@ -30,7 +23,7 @@ const HeroImage = () => {
         />
       </div>
 
-      {/* Bottom Left Ellipse - hero-ellipse2.svg */}
+      {/* bottom left circle */}
       <div className="absolute -bottom-8 left-5 w-[25px] h-[25px] flex-shrink-0">
         <Image
           src="/images/hero-ellipse2.svg"
@@ -40,7 +33,7 @@ const HeroImage = () => {
         />
       </div>
 
-      {/* Main Hero Image */}
+      {/* Main Image */}
       <div className="relative w-full h-full">
         <Image
           src="/images/hero.png"
@@ -101,7 +94,7 @@ const HeroImage = () => {
           </div>
         </div>
 
-        {/* Product Manager Badge - New Addition */}
+        {/* Product Badge  */}
         <div className="absolute -left-24 top-8 inline-flex p-4 items-center gap-2 rounded-xl bg-white shadow-[10px_10px_80px_0px_rgba(35,10,136,0.08)]">
           <Image
             src="/icons/manager.png"
