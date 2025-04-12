@@ -22,7 +22,7 @@ const Portfolio = () => {
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
         {/* Main Square Background */}
-        <div className="relative w-[1440px] h-[786px] flex-shrink-0 mx-auto bg-[rgba(24,90,217,0.04)]">
+        <div className="relative max-w-[1440px] h-[786px] flex-shrink-0 mx-auto bg-[rgba(24,90,217,0.04)]">
           <Image
             src="/icons/square.svg"
             alt="Background pattern"
@@ -31,22 +31,22 @@ const Portfolio = () => {
           />
 
           {/* Left Triangle */}
-          <div className="absolute bottom-0 -left-11 w-[808px] h-[744px] flex-shrink-0">
+          <div className="absolute bottom-0 left-0 w-[808px] h-[744px] flex-shrink-0">
             <Image
               src="/icons/left-triangle.svg"
               alt="Decorative triangle"
               fill
-              className="object-contain object-left-bottom"
+              className="object-cover object-left-bottom"
             />
           </div>
 
           {/* Right Triangle */}
-          <div className="absolute bottom-0 right-11 w-[632px] h-[550px] flex-shrink-0">
+          <div className="absolute bottom-0 right-0 w-[632px] h-[550px] flex-shrink-0">
             <Image
               src="/icons/right-triangle.svg"
               alt="Decorative triangle"
               fill
-              className="object-contain object-right-bottom"
+              className="object-cover object-right-bottom"
             />
           </div>
         </div>
@@ -59,15 +59,13 @@ const Portfolio = () => {
             portfolio
           </Text>
           <div className="flex lg:flex-row flex-col justify-between lg:gap-0 gap-5">
-            <div className="md:w-[554px] w-full xl:pt-[3px]">
-              <Text variant="title">
+              <Text className="md:max-w-[554px] w-full xl:pt-[3px]" variant="title">
                 Discovering digital mastery and
                 <GradientHeading imgClass="h-[12px]">Creative innovation</GradientHeading>
               </Text>
-            </div>
             <div className="flex gap-3 mt-1">
               <VerticalDivider className="w-[4px] h-[64px]" />
-              <Text className="md:w-[498px] w-full xl:pl-[2px]">
+              <Text className="md:max-w-[498px] w-full xl:pl-[2px]">
                 In our portfolio section, you'll embark on a visual journey
                 through a meticulously curated gallery that represents the
                 epitome of digital excellence and creative ingenuity.
