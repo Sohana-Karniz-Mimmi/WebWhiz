@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="flex flex-col md:flex-row lg:items-center gap-12 lg:gap-[30] md:gap-[19px]">
         {/* Content */}
         <div className="w-full md:w-[570px]">
-          <div className="relative mb-4">
+          <div className="relative mb-4 max-w-[509px]">
             <h1 className="flex flex-col gap-2 text-[32px] md:text-[40px] xl:text-[64px] font-bold leading-[120%]">
               Turning{" "}
               <div className="relative z-10 bg-gradient-to-r from-primary-start to-primary-end bg-clip-text text-transparent">

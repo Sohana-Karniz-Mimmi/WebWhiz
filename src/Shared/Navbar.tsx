@@ -47,9 +47,11 @@ const Navbar = () => {
           <Button variant="primary">Contact</Button>
         </div>
 
-        <div className="flex gap-[24px]">
+        <div className="flex lg:hidden gap-[24px]">
           <div className="hidden md:block lg:hidden">
-            <Button className="" variant="primary">Contact</Button>
+            <Button className="" variant="primary">
+              Contact
+            </Button>
           </div>
 
           {/* Mobile menu button */}
