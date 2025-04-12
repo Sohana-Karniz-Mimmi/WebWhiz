@@ -44,7 +44,7 @@ const HeroImage = () => {
         />
 
         {/* Project Done Badge */}
-        <div className="absolute -bottom-12 -right-[72px] inline-flex p-4 justify-center items-center gap-2 rounded-xl bg-white shadow-[10px_10px_80px_0px_rgba(35,10,136,0.08)]">
+        <div className="absolute -bottom-12 -right-[72px] inline-flex p-4 justify-center items-center gap-2 rounded-xl bg-white shadow-[10px_10px_80px_0px_rgba(35,10,136,0.08)] max-w-[173px] min-h-[79px]">
           <div className="w-[47px] h-[47px] flex-shrink-0 rounded-full bg-[rgba(153,101,207,0.10)] flex items-center justify-center">
             <Image
               src="/icons/king.png"
@@ -63,7 +63,7 @@ const HeroImage = () => {
         </div>
 
         {/* Visitors Badge */}
-        <div className="absolute -right-23 top-37 inline-flex p-4 items-center gap-2 rounded-xl bg-white shadow-[10px_10px_80px_0px_rgba(35,10,136,0.08)]">
+        <div className="absolute -right-23 top-37 inline-flex p-4 items-center gap-2 rounded-xl bg-white shadow-[10px_10px_80px_0px_rgba(35,10,136,0.08)] max-w-[170px] min-h-[73px]">
           <div className="flex p-2 justify-center items-center gap-2.5 rounded-full bg-[rgba(24,90,217,0.10)]">
             <Image
               src="/icons/user.svg"
@@ -95,7 +95,7 @@ const HeroImage = () => {
         </div>
 
         {/* Product Badge  */}
-        <div className="absolute -left-24 top-8 inline-flex p-4 items-center gap-2 rounded-xl bg-white shadow-[10px_10px_80px_0px_rgba(35,10,136,0.08)]">
+        <div className="absolute -left-24 top-8 inline-flex p-4 items-center gap-2 rounded-xl bg-white shadow-[10px_10px_80px_0px_rgba(35,10,136,0.08)] w-full max-w-[201px] min-h-[79px]">
           <Image
             src="/icons/manager.png"
             alt="Manager icon"

@@ -1,19 +1,13 @@
 interface VerticalDividerProps {
     className?: string;
-    height?: string;
-    width?: string;
-    marginTop?: string;
   }
   
   const VerticalDivider = ({
-    className = "",
-    height = "h-[65px]",
-    width = "w-3",
-    marginTop = "mt-[7px]"
+    className = "mt-[7px] h-[65px] w-3",
   }: VerticalDividerProps) => {
     return (
       <div 
-        className={`${width} ${height} rounded-lg bg-gradient-to-b from-primary-start to-primary-end ${marginTop} ${className}`}
+        className={`rounded-lg bg-gradient-to-b from-primary-start to-primary-end  ${className}`}
       />
     );
   };

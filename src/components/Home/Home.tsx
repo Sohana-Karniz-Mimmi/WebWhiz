@@ -11,8 +11,8 @@ const HeroSection = () => {
       <div className="flex flex-col md:flex-row lg:items-center gap-12 lg:gap-[30] md:gap-[19px]">
         {/* Content */}
         <div className="w-full md:w-[570px]">
-          <div className="relative mb-4 max-w-[509px]">
-            <h1 className="flex flex-col gap-2 text-[32px] md:text-[40px] xl:text-[64px] font-bold leading-[120%]">
+          <div className="relative mb-[16px] max-w-[306px] sm:max-w-[340px] lg:max-w-[509px]">
+            <h1 className="flex md:items-start items-center flex-col gap-2 text-[32px] md:text-[40px] xl:text-[64px] font-bold lg:leading-[120%] leading-[140%]">
               Turning{" "}
               <div className="relative z-10 bg-gradient-to-r from-primary-start to-primary-end bg-clip-text text-transparent">
                 Imagination
@@ -32,17 +32,32 @@ const HeroSection = () => {
           </div>
 
           {/* Description with border */}
-          <div className="flex justify-between pb-6">
-            <VerticalDivider width="w-[4px]" />
+          <div className="hidden lg:flex justify-between pb-[24px]">
+            <VerticalDivider className="w-[4px]" />
             <Text className="max-w-[554px] w-full">
               Welcome to my digital playground, where creativity knows no
               bounds. I'm a passionate designer and developer on a mission to
               turn innovative ideas into stunning digital realities.
             </Text>
           </div>
+          {/* Tablet Description */}
+          <div className="hidden md:flex lg:hidden gap-[12px] pb-[24px]">
+            <VerticalDivider className="!mt-0 w-[4px] h-[53px]" />
+            <Text className="h-[53px] w-[323px] max-w-full line-clamp-2">
+              Welcome to my digital playground, where creativity knows no bounds passionate designer and developer on a mission to turn innovative
+              ideas into stunning digital realities.
+            </Text>
+          </div>
+          {/* Tablet Description */}
+          <div className="flex md:hidden pb-[26]">
+            <Text className="h-[78px] w-[327px] text-center">
+              Welcome to my digital playground, where creativity knows no
+              bounds. I'm a passionate designer and developer
+            </Text>
+          </div>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 ">
+          <div className="flex gap-[12px] ">
             <Link href="/hire">
               <Button className="w-[160px]" variant="primary">
                 Hire Me

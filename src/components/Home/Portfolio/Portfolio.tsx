@@ -66,7 +66,7 @@ const Portfolio = () => {
               </Text>
             </div>
             <div className="flex gap-3 mt-1">
-              <VerticalDivider width="w-[4px]" height="h-[64px]" />
+              <VerticalDivider className="w-[4px] h-[64px]" />
               <Text className="md:w-[498px] w-full xl:pl-[2px]">
                 In our portfolio section, you'll embark on a visual journey
                 through a meticulously curated gallery that represents the
