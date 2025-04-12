@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="flex justify-between items-center custom_container py-[32px]">
+      <nav className="flex justify-between items-center custom_container pt-[32px]">
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link href="/">
@@ -35,7 +35,7 @@ const Navbar = () => {
               <li key={item.name}>
                 <Link
                   href={item.path}
-                  className="text-body text-sm font-normal leading-[160%] hover:text-primary transition-colors duration-200"
+                  className="text-body text-[14px] font-normal leading-[160%] hover:text-primary transition-colors duration-200"
                 >
                   {item.name}
                 </Link>

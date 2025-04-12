@@ -63,7 +63,7 @@ const PortfolioSlider = () => {
                     </div>
 
                     {/* Content Box */}
-                    <div className="absolute left-6 bottom-6 right-5 flex p-4 items-center gap-[87px] rounded-[16px] bg-white z-20">
+                    <div className="absolute left-6 bottom-6 right-5 flex p-[16px] items-center gap-[87px] rounded-[16px] bg-white z-20">
                       <div className="flex-1">
                         <h3 className="text-[20px] font-bold leading-[150%] xl:pl-[2px]">
                           Finance Banking Landing page
@@ -76,7 +76,7 @@ const PortfolioSlider = () => {
                       </div>
 
                       {/* Icon with gradient  */}
-                      <div className="flex p-4 justify-center items-center gap-2.5 rounded-[12px] bg-gradient-to-r from-[#5F90F0] to-[#185AD9]">
+                      <div className="flex p-[16px] justify-center items-center gap-2.5 rounded-[12px] bg-gradient-to-r from-[#5F90F0] to-[#185AD9]">
                         <Image
                           src="/icons/send-white-arrow.svg"
                           alt="View project"
@@ -113,7 +113,7 @@ const PortfolioSlider = () => {
         </div>
 
         {/* Navigation Controls */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-[16px]">
           <div className="flex gap-3">
             <button
               onClick={prevSlide}

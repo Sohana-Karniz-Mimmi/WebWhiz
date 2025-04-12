@@ -18,7 +18,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="relative max-w-[1440px] w-full mx-auto overflow-hidden md:mt-[123px] mt-8">
+    <section className="relative max-w-[1440px] w-full mx-auto overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
         {/* Main Square Background */}
@@ -83,8 +83,8 @@ const Portfolio = () => {
                 onClick={() => setActiveTab(tab)}
                 className={`flex px-3 py-2 justify-center items-center gap-2.5 whitespace-nowrap ${
                   activeTab === tab
-                    ? "h-[42px] border-b-2 border-secondary text-secondary font-medium text-base leading-[150%]"
-                    : "text-body font-normal text-base leading-[160%] "
+                    ? "h-[42px] border-b-2 border-secondary text-secondary font-medium text-[16px] leading-[150%]"
+                    : "text-body font-normal text-[16px] leading-[160%] "
                 }`}
               >
                 {tab}

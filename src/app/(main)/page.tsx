@@ -7,7 +7,7 @@ export default function Home() {
     <main className="w-full min-h-screen">
       <Hero />
       <Portfolio />
-      <About />
+      {/* <About /> */}
     </main>
   );
 }
