@@ -24,7 +24,7 @@ const About = () => {
               </GradientHeading>
             </Text>
           </div>
-          <div className="flex gap-3 mt-[8px]">
+          <div className="flex gap-[12px] mt-[8px]">
             <VerticalDivider className="w-[4px] h-[64px]" />
             <Text className="md:w-[489px] w-full xl:pl-[2px]">
               In our portfolio section, you'll embark on a visual journey

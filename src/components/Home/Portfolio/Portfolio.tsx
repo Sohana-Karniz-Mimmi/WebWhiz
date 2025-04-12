@@ -53,19 +53,28 @@ const Portfolio = () => {
       </div>
 
       {/* Content Container */}
-      <div className="md:pt-20 py-[24px]">
-        <div className="custom_container pb-8">
-          <Text className="xl:pl-1" variant="caption">
+      <div className="lg:pt-[80px] md:pt-[32px] pt-[24px]">
+        <div className="custom_container lg:pb-[40px] md:pb-[32px] pb-[24px]">
+          <Text className="xl:pl-1 md:text-start text-center" variant="caption">
             portfolio
           </Text>
-          <div className="flex lg:flex-row flex-col justify-between lg:gap-0 gap-5">
-              <Text className="md:max-w-[554px] w-full xl:pt-[3px]" variant="title">
-                Discovering digital mastery and
-                <GradientHeading imgClass="h-[12px]">Creative innovation</GradientHeading>
-              </Text>
-            <div className="flex gap-3 mt-1">
+
+          {/* Desktop and mobile */}
+          <div className="hidden lg:flex md:flex-row flex-col justify-between lg:gap-0 gap-5">
+            {/* title */}
+            <Text
+              className="md:max-w-[554px] w-full xl:pt-[3px]"
+              variant="title"
+            >
+              Discovering digital mastery and
+              <GradientHeading imgClass="h-[12px]">
+                Creative innovation
+              </GradientHeading>
+            </Text>
+            {/* description */}
+            <div className="flex gap-[12px] mt-1">
               <VerticalDivider className="w-[4px] h-[64px]" />
-              <Text className="md:max-w-[498px] w-full xl:pl-[2px]">
+              <Text className="md:max-w-[498px] w-full xl:pl-[2px]s">
                 In our portfolio section, you'll embark on a visual journey
                 through a meticulously curated gallery that represents the
                 epitome of digital excellence and creative ingenuity.
@@ -73,16 +82,47 @@ const Portfolio = () => {
             </div>
           </div>
 
+          {/* Tablet  */}
+          <div className="flex lg:hidden md:flex-row flex-col justify-between lg:gap-0">
+            {/* title */}
+            <Text className="md:max-w-[339px] md:ml-0 md:mr-auto mx-auto w-[327px] md:text-start text-center" variant="title">
+              Discovering digital mastery and
+              <GradientHeading
+                width={114}
+                className="px-[4px]"
+                imgClass="md:h-[12px] h-[9px]"
+              >
+                Creative
+              </GradientHeading>
+              <GradientHeading imgClass="md:h-[12px] h-[9px]">
+                innovation
+              </GradientHeading>
+            </Text>
+            {/* description */}
+            <div className="flex gap-[12px] md:mt-[4px] mt-[8px]">
+              <VerticalDivider className="hidden md:block w-[4px] h-[54px]" />
+              <Text className="hidden md:block max-w-[348px] w-full line-clamp-2">
+                In our portfolio section, you'll embark on a visual journey
+                through a meticulously curated gallery that represents the
+                epitome of digital excellence and creative ingenuity.
+              </Text>
+              <Text className="block md:hidden max-w-[327px] text-center">
+                In our portfolio section, you'll embark on a visual journey
+                through a meticulously
+              </Text>
+            </div>
+          </div>
+
           {/* Tabs */}
-          <div className="flex gap-6 mt-4 xl:pl-[3px] overflow-x-auto pb-2">
+          <div className="flex gap-6 md:mt-[16px] mt-[24px] xl:pl-[3px] overflow-x-auto pb-2">
             {tabs.map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`flex px-3 py-2 justify-center items-center gap-2.5 whitespace-nowrap ${
+                className={`flex md:px-[12px] md:py-[8px] px-[8px] py-[4px] justify-center items-center gap-2.5 whitespace-nowrap md:text-[16px] text-[14px] ${
                   activeTab === tab
-                    ? "h-[42px] border-b-2 border-secondary text-secondary font-medium text-[16px] leading-[150%]"
-                    : "text-body font-normal text-[16px] leading-[160%] "
+                    ? "h-[42px] border-b-2 border-secondary text-secondary font-medium leading-[150%]"
+                    : "text-body font-normal leading-[160%] "
                 }`}
               >
                 {tab}

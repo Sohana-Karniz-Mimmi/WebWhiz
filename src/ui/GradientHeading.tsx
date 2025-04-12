@@ -32,7 +32,7 @@ const GradientHeading = ({
           alt=""
           width={width}
           height={height}
-          className={`absolute bottom-3 object-cover z-0 ${imgClass}`}
+          className={`absolute lg:bottom-3 bottom-2 object-cover z-0 ${imgClass}`}
           priority
         />
       )}

@@ -114,7 +114,7 @@ const PortfolioSlider = () => {
 
         {/* Navigation Controls */}
         <div className="flex items-center gap-[16px]">
-          <div className="flex gap-3">
+          <div className="flex gap-[12px]">
             <button
               onClick={prevSlide}
               className="flex w-[32px] h-[32px] justify-center items-center rounded-[80px] border border-[#5F90F0]"
