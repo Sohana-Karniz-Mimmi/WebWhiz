@@ -16,7 +16,7 @@ const Text = ({
   const baseClasses = "font-normal";
 
   const variantClasses = {
-    body: "text-base text-body leading-[160%]",
+    body: "text-[16px] text-body leading-[160%]",
     caption: "text-sm text-caption font-semibold leading-[160%] uppercase tracking-[1.68px]",
     title: "lg:text-[40px] md:text-[30px] text-[25px] !font-bold text-primary leading-[140%]",
     subtitle: "text-lg font-medium text-secondary",

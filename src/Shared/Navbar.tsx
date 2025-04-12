@@ -29,8 +29,8 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center lg:gap-8 gap-5">
-          <ul className="flex items-center lg:gap-8 gap-5">
+        <div className="hidden lg:flex items-center lg:gap-[32px] gap-[20]">
+          <ul className="flex items-center lg:gap-[32px] gap-[20px]">
             {navItems.map((item) => (
               <li key={item.name}>
                 <Link
@@ -47,24 +47,30 @@ const Navbar = () => {
           <Button variant="primary">Contact</Button>
         </div>
 
-        {/* Mobile menu button */}
-        <div className="md:hidden">
-          <button className="text-gray-700">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
+        <div className="flex gap-[24px]">
+          <div className="hidden md:block lg:hidden">
+            <Button className="" variant="primary">Contact</Button>
+          </div>
+
+          {/* Mobile menu button - visible on mobile and tablet */}
+          <div className="flex lg:hidden">
+            <button className="text-gray-700">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </nav>
     </header>

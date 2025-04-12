@@ -13,7 +13,7 @@ const Button = ({
   className = "", 
   onClick 
 }: ButtonProps) => {
-  const baseClasses = "text-sm font-medium leading-[160%] flex py-3 px-6 justify-center items-center gap-2.5 rounded-[80px] transition-all duration-200";
+  const baseClasses = "text-[14px] font-medium leading-[160%] flex py-[12px] px-[24px] justify-center items-center gap-2.5 rounded-[80px] transition-all duration-200";
   
   const variantClasses = {
     primary: "text-white bg-gradient-to-r from-primary-start to-primary-end hover:opacity-90",
