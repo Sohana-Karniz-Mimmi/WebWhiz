@@ -52,7 +52,7 @@ const Navbar = () => {
             <Button className="" variant="primary">Contact</Button>
           </div>
 
-          {/* Mobile menu button - visible on mobile and tablet */}
+          {/* Mobile menu button */}
           <div className="flex lg:hidden">
             <button className="text-gray-700">
               <svg
