@@ -25,10 +25,10 @@ const PortfolioSlider = () => {
 
   return (
     <div className="max-w-[1440px] mx-auto">
-      <div className="relative h-[390px] overflow-hidden">
+      <div className="relative lg:h-[390px] overflow-hidden">
         <div className="custom_container relative h-full xl:pl-[2px]">
           <div
-            className="flex gap-6 transition-transform duration-300"
+            className="flex gap-[24px] transition-transform duration-300"
             style={{
               transform: `translateX(-${currentSlide * 570}px)`,
               width: `${slides.length * 570}px`,
@@ -37,7 +37,7 @@ const PortfolioSlider = () => {
             {slides.map((slide, index) => (
               <div
                 key={index}
-                className="w-[570px] h-[390px] rounded-[16px] relative"
+                className="lg:w-[554px] lg:h-[390px] w-[327px] h-[256px] rounded-[16px] relative"
               >
                 {/* Main Image */}
                 <Image
@@ -95,7 +95,7 @@ const PortfolioSlider = () => {
       </div>
 
       {/* Navigation */}
-      <div className="custom_container flex justify-between items-center pt-6 px-4">
+      <div className="custom_container flex justify-between items-center py-[24px]">
         <div className="w-[50px]"></div>
 
         <div className="flex gap-2 xl:ml-[77px]">
