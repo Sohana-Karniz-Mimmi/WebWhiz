@@ -1,34 +1,24 @@
-"use client";
-
+// app/components/Services.tsx
+import GradientHeading from "@/ui/GradientHeading";
 import Text from "@/ui/Text";
 import VerticalDivider from "@/ui/VerticalDivider";
 import Image from "next/image";
-import { useState } from "react";
-import PortfolioSlider from "./PortfolioSlider";
-import GradientHeading from "@/ui/GradientHeading";
+import React from "react";
+import ServicesCard from "./ServicesCard";
 
-const Portfolio = () => {
-  const [activeTab, setActiveTab] = useState("All Project");
-
-  const tabs = [
-    "All Project",
-    "UI/UX Design",
-    "Graphic Design",
-    "Developments",
-  ];
-
+const Services = () => {
   return (
-    <section className="relative max-w-[1440px] lg:h-[786px] md:h-[617px] h-[592px] w-full mx-auto overflow-hidden">
+    <section className="relative max-w-[1440px] lg:h-[992px] md:h-[684px] h-[1174px] w-full mx-auto overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
         {/* Main Square Background */}
-        <div className="relative max-w-[1440px] lg:h-[786px] md:h-[617px] h-[592px] flex-shrink-0 mx-auto bg-[rgba(24,90,217,0.04)]">
-          <Image
+        <div className="relative max-w-[1440px] lg:h-[992px] md:h-[684px] h-[1174px] flex-shrink-0 mx-auto bg-[rgba(24,90,217,0.04)]">
+          {/* <Image
             src="/icons/square.svg"
             alt="Background pattern"
             fill
             className="object-cover"
-          />
+          /> */}
 
           {/* Left Triangle */}
           <div className="md:block hidden absolute bottom-0 lg:left-0 -left-[100px] lg:w-[808px] lg:h-[744px] md:w-[569px] h-[529px] flex-shrink-0">
@@ -112,89 +102,41 @@ const Portfolio = () => {
       </div>
 
       {/* Content Container */}
-      <div className="lg:pt-[80px] md:pt-[32px] pt-[24px]">
-        <div className="custom_container lg:pb-[40px] md:pb-[32px] pb-[24px]">
+      <div className="lg:py-[80px] md:py-[32px] py-[24px]">
+        <div className="custom_container">
           <Text className="xl:pl-1" variant="caption">
-            portfolio
+            Services
           </Text>
-
-          {/* Desktop and mobile */}
-          <div className="hidden lg:flex md:flex-row flex-col justify-between lg:gap-0 gap-5">
-            {/* title */}
+          <div className="flex md:flex-row flex-col justify-between lg:gap-[110px] md:gap-[39px] gap-[8px]">
             <Text
-              className="md:max-w-[554px] w-full xl:pt-[3px]"
+              className="lg:max-w-[516px] md:max-w-[330px] max-w-[327px] xl:pt-[3px]"
               variant="title"
             >
-              Discovering digital mastery and
-              <GradientHeading imgClass="h-[12px]">
-                Creative innovation
-              </GradientHeading>
-            </Text>
-            {/* description */}
-            <div className="flex gap-[12px] mt-1">
-              <VerticalDivider className="w-[4px] h-[64px]" />
-              <Text className="md:max-w-[498px] w-full xl:pl-[2px]s">
-                In our portfolio section, you'll embark on a visual journey
-                through a meticulously curated gallery that represents the
-                epitome of digital excellence and creative ingenuity.
-              </Text>
-            </div>
-          </div>
-
-          {/* Tablet  */}
-          <div className="flex lg:hidden md:flex-row flex-col justify-between lg:gap-0">
-            {/* title */}
-            <Text className="md:max-w-[339px] w-[327px]" variant="title">
-              Discovering digital mastery and
+              Our
               <GradientHeading
-                width={114}
-                className="px-[4px]"
-                imgClass="md:h-[12px] h-[9px]"
-              >
-                Creative
+              className="pl-2"
+              imgClass="md:h-[12px] h-[10px] w-[229px] md:w-[269px] lg:w-[382px] xl:left-[13px] left-[9px]">
+                satisfied customers
               </GradientHeading>
-              <GradientHeading imgClass="md:h-[12px] h-[9px]">
-                innovation
-              </GradientHeading>
+              share their stories
             </Text>
-            {/* description */}
-            <div className="flex gap-[12px] md:mt-[4px] mt-[8px]">
-              <VerticalDivider className=" w-[4px] h-[54px]" />
-              <Text className="hidden md:block max-w-[348px] w-full line-clamp-2">
-                In our portfolio section, you'll embark on a visual journey
-                through a meticulously curated gallery that represents the
-                epitome of digital excellence and creative ingenuity.
+            <div className="flex gap-[12px] xl:mt-[8px]">
+              <VerticalDivider className="w-[4px] md:h-[54px] lg:h-[64px]" />
+              <Text className="hidden md:block lg:max-w-[489px] md:max-w-[318px] w-full xl:pl-[2px] line-clamp-2">
+              In our portfolio section, you'll embark on a visual journey through a meticulously curated gallery that represents the epitome of digital excellence and creative ingenuity.
               </Text>
               <Text className="block md:hidden max-w-[327px] mx-auto text-center">
                 In our portfolio section, you'll embark on a visual journey
-                through a meticulously
+                through a meticulously curated gallery
               </Text>
             </div>
           </div>
 
-          {/* Tabs */}
-          <div className="flex gap-6 md:mt-[16px] mt-[24px] xl:pl-[3px] overflow-x-auto">
-            {tabs.map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`flex md:px-[12px] md:py-[8px] px-[8px] py-[4px] justify-center items-center gap-2.5 whitespace-nowrap md:text-[16px] text-[14px] ${
-                  activeTab === tab
-                    ? "h-[42px] border-b-2 border-secondary text-secondary font-medium leading-[150%]"
-                    : "text-body font-normal leading-[160%] "
-                }`}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
+          <ServicesCard />
         </div>
-
-        {/* Portfolio Slider */}
-        <PortfolioSlider />
       </div>
     </section>
   );
 };
 
-export default Portfolio;
+export default Services;

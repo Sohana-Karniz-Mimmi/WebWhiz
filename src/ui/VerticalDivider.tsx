@@ -7,7 +7,7 @@ interface VerticalDividerProps {
   }: VerticalDividerProps) => {
     return (
       <div 
-        className={`rounded-lg bg-gradient-to-b from-primary-start to-primary-end  ${className}`}
+        className={`hidden md:block rounded-lg bg-gradient-to-b from-primary-start to-primary-end  ${className}`}
       />
     );
   };

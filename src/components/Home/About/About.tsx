@@ -6,7 +6,7 @@ import Skills from "./Skills";
 
 const About = () => {
   return (
-    <div className="lg:py-[76px] py-[42px]">
+    <section className="lg:py-[76px] py-[42px]">
       <div className="custom_container pb-8">
         <Text className="xl:pl-1" variant="caption">
           About us
@@ -25,8 +25,8 @@ const About = () => {
             </GradientHeading>
           </Text>
           <div className="flex gap-[12px] xl:mt-[8px]">
-            <VerticalDivider className="hidden md:block w-[4px] md:h-[54px] lg:h-[64px]" />
-            <Text className="hidden md:block lg:max-w-[489px] md:max-w-[489px] w-full xl:pl-[2px] line-clamp-2">
+            <VerticalDivider className="w-[4px] md:h-[54px] lg:h-[64px]" />
+            <Text className="hidden md:block lg:max-w-[489px] md:max-w-[318px] w-full xl:pl-[2px] line-clamp-2">
               In our portfolio section, you'll embark on a visual journey
               through a meticulously curated gallery that represents the epitome
               of digital excellence and creative ingenuity.
@@ -41,7 +41,7 @@ const About = () => {
         {/* Skill and image */}
         <Skills />
       </div>
-    </div>
+    </section>
   );
 };
 
