@@ -53,6 +53,23 @@ const Skills = () => {
         {/* Box */}
         <div className="w-full max-w-[531px] h-[124px] p-[32px] rounded-[12px] bg-gradient-to-r from-primary-start to-primary-end flex items-center justify-between absolute -bottom-[71px] left-[74px] -right-[51px]">
           {stats.map((stat, index) => (
+            <>
+              <div key={index} className="text-center w-full ">
+                <h2 className="text-white text-[24px] font-bold leading-[140%]">
+                  {stat.value}
+                </h2>
+                <p className="text-[rgba(255,255,255,0.80)] text-[16px] font-normal leading-[160%]">
+                  {stat.label}
+                </p>
+              </div>
+              {index < stats.length - 1 && (
+                <div className="mx-[8px] xl:mx-[21px] rounded-[16px] w-[2px] h-[60px] bg-[rgba(226,244,234,0.50)]" />
+              )}
+            </>
+          ))}
+        </div>
+        {/* <div className="w-full max-w-[531px] h-[124px] p-[32px] rounded-[12px] bg-gradient-to-r from-primary-start to-primary-end flex items-center justify-between absolute -bottom-[71px] left-[74px] -right-[51px]">
+          {stats.map((stat, index) => (
             <div key={index} className="flex items-center gap-[32px]">
               <div className="text-center">
                 <p className="text-white text-[24px] font-bold leading-[140%]">
@@ -67,7 +84,7 @@ const Skills = () => {
               )}
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
 
       {/* Image for Tablet and mobile*/}
