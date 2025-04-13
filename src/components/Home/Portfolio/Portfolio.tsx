@@ -114,7 +114,7 @@ const Portfolio = () => {
       {/* Content Container */}
       <div className="lg:pt-[80px] md:pt-[32px] pt-[24px]">
         <div className="custom_container lg:pb-[40px] md:pb-[32px] pb-[24px]">
-          <Text className="xl:pl-1 md:text-start text-center" variant="caption">
+          <Text className="xl:pl-1" variant="caption">
             portfolio
           </Text>
 
@@ -144,10 +144,7 @@ const Portfolio = () => {
           {/* Tablet  */}
           <div className="flex lg:hidden md:flex-row flex-col justify-between lg:gap-0">
             {/* title */}
-            <Text
-              className="md:max-w-[339px] md:ml-0 md:mr-auto mx-auto w-[327px] md:text-start text-center"
-              variant="title"
-            >
+            <Text className="md:max-w-[339px] w-[327px]" variant="title">
               Discovering digital mastery and
               <GradientHeading
                 width={114}
