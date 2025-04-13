@@ -1,5 +1,6 @@
 "use client";
 
+import PaginationControls from "@/ui/PaginationControls";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -165,7 +166,7 @@ const PortfolioSlider = () => {
           </div>
 
           {/* Navigation Controls */}
-          <div className="flex items-center gap-[16px]">
+          {/* <div className="flex items-center gap-[16px]">
             <div className="flex gap-[12px]">
               <button
                 onClick={prevSlide}
@@ -200,7 +201,14 @@ const PortfolioSlider = () => {
                 />
               </button>
             </div>
-          </div>
+          </div> */}
+          {/* Basic usage */}
+      <PaginationControls 
+        currentIndex={currentSlide}
+        totalItems={slides.length}
+        onPrev={prevSlide}
+        onNext={nextSlide}
+      />
         </div>
       </div>
     </div>

@@ -13,13 +13,7 @@ const Services = () => {
       <div className="absolute inset-0 -z-10">
         {/* Main Square Background */}
         <div className="relative max-w-[1440px] lg:h-[992px] md:h-[684px] h-[1174px] flex-shrink-0 mx-auto bg-[rgba(24,90,217,0.04)]">
-          {/* <Image
-            src="/icons/square.svg"
-            alt="Background pattern"
-            fill
-            className="object-cover"
-          /> */}
-
+          
           {/* Left Triangle */}
           <div className="md:block hidden absolute bottom-0 lg:left-0 -left-[100px] lg:w-[808px] lg:h-[744px] md:w-[569px] h-[529px] flex-shrink-0">
             <Image
