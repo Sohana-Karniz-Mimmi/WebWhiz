@@ -15,9 +15,9 @@ const Skills = () => {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row lg:gap-[32px] gap-[24px] md:mt-[48px] mt-[30px]">
+    <div className="flex flex-col md:items-start items-center md:flex-row lg:gap-[32px] gap-[24px] md:mt-[48px] mt-[30px]">
       {/* Skills */}
-      <div className="flex-1 p-[30px] lg:p-[50px] rounded-[12px] bg-[rgba(24,90,217,0.04)] max-w-[327px] md:max-w-[340px] h-[308px] lg:max-w-[554px] lg:h-[348px]">
+      <div className="w-full max-w-[327px] md:max-w-[340px] lg:max-w-[554px] p-[30px] lg:p-[50px] rounded-[12px] bg-[rgba(24,90,217,0.04)] md:flex-1">
         {skills.map((skill, index) => (
           <div key={index} className="mb-[16px] last:mb-0 xl:pl-[2px]">
             <h3 className="text-[16px] font-semibold leading-[150%] mb-[4px]">
@@ -39,8 +39,8 @@ const Skills = () => {
         ))}
       </div>
 
-      {/* Image */}
-      <div className="flex-1 max-w-[554px] h-[312px] rounded-[12px] bg-[#F4FBF7] relative flex items-center">
+      {/* Image for desktop */}
+      <div className="flex-1 max-w-[554px] h-[312px] rounded-[12px] bg-[#F4FBF7] relative hidden lg:flex items-center">
         <div className="absolute inset-0">
           <Image
             src="/images/about.png"
@@ -64,6 +64,48 @@ const Skills = () => {
               </div>
               {index < stats.length - 1 && (
                 <div className="w-[2px] h-[60px] rounded-[16px] bg-[rgba(226,244,234,0.5)] mr-[32px]" />
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Image for Tablet and mobile*/}
+      <div className="w-full max-w-[327px] md:max-w-[340px] h-[256px] bg-[#F4FBF7] relative md:flex-1 flex lg:hidden items-center overflow-visible">
+        {/* Mobile */}
+        <div className="md:hidden w-full h-full">
+          <Image
+            src="/images/about-mobile.png"
+            alt="Mobile Illustration"
+            fill
+            className="object-cover rounded-[12px]"
+          />
+        </div>
+
+        {/* Tablet) */}
+        <div className="hidden md:block lg:hidden w-full h-full absolute inset-0">
+          <Image
+            src="/images/about-mobile.png"
+            alt="Tablet Illustration"
+            fill
+            className="object-cover rounded-[12px]"
+          />
+        </div>
+
+        {/* Box */}
+        <div className="w-[327px] md:w-[349px] h-[81px] p-[16px] rounded-[12px] bg-gradient-to-r from-primary-start to-primary-end flex items-center justify-between absolute md:-bottom-[14px] -bottom-[7px] md:left-1/2 md:-translate-x-1/2 left-0">
+          {stats.map((stat, index) => (
+            <div key={index} className="flex items-center gap-[16px]">
+              <div className="text-center">
+                <p className="text-white text-[16px] font-bold leading-[150%]">
+                  {stat.value}
+                </p>
+                <p className="text-[rgba(255,255,255,0.80)] md:text-[11px] text-[10px] font-normal leading-[160%]">
+                  {stat.label}
+                </p>
+              </div>
+              {index < stats.length - 1 && (
+                <div className="w-[2px] h-[49px] rounded-[16px] bg-[rgba(226,244,234,0.5)] mr-[16px]" />
               )}
             </div>
           ))}
