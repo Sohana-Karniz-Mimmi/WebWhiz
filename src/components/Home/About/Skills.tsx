@@ -93,7 +93,7 @@ const Skills = () => {
         </div>
 
         {/* Box */}
-        <div className="w-[327px] md:w-[349px] h-[81px] p-[16px] rounded-[12px] bg-gradient-to-r from-primary-start to-primary-end flex items-center justify-between absolute md:-bottom-[14px] -bottom-[7px] md:left-1/2 md:-translate-x-1/2 left-0">
+        <div className="w-[349px] h-[81px] p-[16px] rounded-[12px] bg-gradient-to-r from-primary-start to-primary-end flex items-center justify-between absolute md:-bottom-[14px] -bottom-[7px] left-1/2 -translate-x-1/2">
           {stats.map((stat, index) => (
             <div key={index} className="flex items-center gap-[16px]">
               <div className="text-center">
