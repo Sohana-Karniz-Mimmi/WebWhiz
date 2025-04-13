@@ -31,7 +31,7 @@ const Portfolio = () => {
           />
 
           {/* Left Triangle */}
-          <div className="absolute bottom-0 left-0 w-[808px] h-[744px] flex-shrink-0">
+          <div className="md:block hidden absolute bottom-0 lg:left-0 -left-[100px] lg:w-[808px] lg:h-[744px] md:w-[569px] h-[529px] flex-shrink-0">
             <Image
               src="/icons/left-triangle.svg"
               alt="Decorative triangle"
@@ -41,13 +41,72 @@ const Portfolio = () => {
           </div>
 
           {/* Right Triangle */}
-          <div className="absolute bottom-0 right-0 w-[632px] h-[550px] flex-shrink-0">
+          <div className="md:block hidden absolute bottom-0 lg:right-0 -right-[115px] lg:w-[632px] lg:h-[550px] md:w-[463px] md:h-[414px] flex-shrink-0">
             <Image
               src="/icons/right-triangle.svg"
               alt="Decorative triangle"
               fill
               className="object-cover object-right-bottom"
             />
+          </div>
+          {/* Left Triangle Mobile */}
+          <div className="block md:hidden absolute bottom-0 left-0">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="204"
+              height="278"
+              viewBox="0 0 204 278"
+              fill="none"
+            >
+              <path
+                d="M204 278L-74 0V278H204Z"
+                fill="url(#paint0_linear_13_1163)"
+                fill-opacity="0.02"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_13_1163"
+                  x1="-60.5049"
+                  y1="30.2174"
+                  x2="229.61"
+                  y2="75.8298"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#5F90F0" />
+                  <stop offset="1" stop-color="#185AD9" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          {/* Right Triangle Mobile*/}
+          <div className="block md:hidden absolute bottom-0 right-0">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="178"
+              height="217"
+              viewBox="0 0 178 217"
+              fill="none"
+            >
+              <path
+                d="M1.52588e-05 217L226 0V217H1.52588e-05Z"
+                fill="url(#paint0_linear_13_1162)"
+                fill-opacity="0.02"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_13_1162"
+                  x1="215.029"
+                  y1="23.587"
+                  x2="-20.3385"
+                  y2="62.1267"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#5F90F0" />
+                  <stop offset="1" stop-color="#185AD9" />
+                </linearGradient>
+              </defs>
+            </svg>
           </div>
         </div>
       </div>
@@ -85,7 +144,10 @@ const Portfolio = () => {
           {/* Tablet  */}
           <div className="flex lg:hidden md:flex-row flex-col justify-between lg:gap-0">
             {/* title */}
-            <Text className="md:max-w-[339px] md:ml-0 md:mr-auto mx-auto w-[327px] md:text-start text-center" variant="title">
+            <Text
+              className="md:max-w-[339px] md:ml-0 md:mr-auto mx-auto w-[327px] md:text-start text-center"
+              variant="title"
+            >
               Discovering digital mastery and
               <GradientHeading
                 width={114}
@@ -106,7 +168,7 @@ const Portfolio = () => {
                 through a meticulously curated gallery that represents the
                 epitome of digital excellence and creative ingenuity.
               </Text>
-              <Text className="block md:hidden max-w-[327px] text-center">
+              <Text className="block md:hidden max-w-[327px] mx-auto text-center">
                 In our portfolio section, you'll embark on a visual journey
                 through a meticulously
               </Text>
