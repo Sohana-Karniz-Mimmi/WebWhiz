@@ -6,7 +6,7 @@ import Skills from "./Skills";
 
 const About = () => {
   return (
-    <div className="md:py-[76px] py-[32px]">
+    <div className="lg:py-[76px] py-[42px]">
       <div className="custom_container pb-8">
         <Text className="xl:pl-1" variant="caption">
           About us
@@ -36,7 +36,6 @@ const About = () => {
 
         {/* Skill and image */}
         <Skills />
-        
       </div>
     </div>
   );

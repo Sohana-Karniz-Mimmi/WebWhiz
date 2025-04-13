@@ -15,7 +15,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row gap-8 md:mt-[48px] mt-[30px]">
+    <div className="flex flex-col md:flex-row gap-[32px] md:mt-[48px] mt-[30px]">
       {/* Skills */}
       <div className="flex-1 p-[50px] rounded-[12px] bg-[rgba(24,90,217,0.04)] max-w-[554px] h-[348px]">
         {skills.map((skill, index) => (
@@ -51,24 +51,22 @@ const Skills = () => {
         </div>
 
         {/* Box */}
-        <div className="absolute -bottom-[72px] left-0 -right-[130px] flex justify-center">
-          <div className="w-full max-w-[531px] h-[124px] p-[32px] rounded-[12px] bg-gradient-to-r from-primary-start to-primary-end flex items-center justify-between">
-            {stats.map((stat, index) => (
-              <div key={index} className="flex items-center gap-[32px]">
-                <div className="text-center">
-                  <p className="text-white text-[24px] font-bold leading-[140%]">
-                    {stat.value}
-                  </p>
-                  <p className="text-white/80 text-[15px] font-normal leading-[160%]">
-                    {stat.label}
-                  </p>
-                </div>
-                {index < stats.length - 1 && (
-                  <div className="w-[2px] h-[60px] rounded-[16px] bg-[rgba(226,244,234,0.5)] mr-[32px]" />
-                )}
+        <div className="w-full max-w-[531px] h-[124px] p-[32px] rounded-[12px] bg-gradient-to-r from-primary-start to-primary-end flex items-center justify-between absolute -bottom-[71px] left-[74px] -right-[51px]">
+          {stats.map((stat, index) => (
+            <div key={index} className="flex items-center gap-[32px]">
+              <div className="text-center">
+                <p className="text-white text-[24px] font-bold leading-[140%]">
+                  {stat.value}
+                </p>
+                <p className="text-white/80 text-[15px] font-normal leading-[160%]">
+                  {stat.label}
+                </p>
               </div>
-            ))}
-          </div>
+              {index < stats.length - 1 && (
+                <div className="w-[2px] h-[60px] rounded-[16px] bg-[rgba(226,244,234,0.5)] mr-[32px]" />
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </div>
