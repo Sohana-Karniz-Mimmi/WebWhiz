@@ -15,9 +15,9 @@ const Skills = () => {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row gap-[32px] md:mt-[48px] mt-[30px]">
+    <div className="flex flex-col md:flex-row lg:gap-[32px] gap-[24px] md:mt-[48px] mt-[30px]">
       {/* Skills */}
-      <div className="flex-1 p-[50px] rounded-[12px] bg-[rgba(24,90,217,0.04)] max-w-[554px] h-[348px]">
+      <div className="flex-1 p-[30px] lg:p-[50px] rounded-[12px] bg-[rgba(24,90,217,0.04)] max-w-[327px] md:max-w-[340px] h-[308px] lg:max-w-[554px] lg:h-[348px]">
         {skills.map((skill, index) => (
           <div key={index} className="mb-[16px] last:mb-0 xl:pl-[2px]">
             <h3 className="text-[16px] font-semibold leading-[150%] mb-[4px]">
