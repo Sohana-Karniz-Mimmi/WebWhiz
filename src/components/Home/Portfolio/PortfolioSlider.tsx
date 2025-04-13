@@ -28,7 +28,7 @@ const PortfolioSlider = () => {
       <div className="relative lg:h-[390px] overflow-hidden">
         <div className="custom_container relative h-full xl:pl-[2px]">
           <div
-            className="flex gap-[24px] transition-transform duration-300"
+            className="flex lg:gap-[24px] md:gap-[35px] gap-[24px] transition-transform duration-300"
             style={{
               transform: `translateX(-${currentSlide * 570}px)`,
               width: `${slides.length * 570}px`,
@@ -63,26 +63,29 @@ const PortfolioSlider = () => {
                     </div>
 
                     {/* Content Box */}
-                    <div className="absolute left-6 bottom-6 right-5 flex px-[16px] lg:py-[16px] py-[8px] items-center lg:gap-[87px] rounded-[16px] bg-white z-20 lg:max-w[506px] md:max-w[327pxpx]">
+                    <div className="absolute lg:left-6 lg:bottom-6 lg:right-5 bottom-0 left-0 right-0 flex px-[16px] lg:py-[16px] py-[8px] items-center lg:gap-[87px] lg:rounded-[16px] rounded-[8px] bg-white z-20 lg:max-w-[506px] md:max-w-[327px]">
                       <div className="flex-1">
-                        <h3 className="text-[20px] font-bold leading-[150%] xl:pl-[2px]">
+                        <h3 className="lg:text-[20px] text-[14px] font-bold lg:leading-[150%] leading-[160%] xl:pl-[2px]">
                           Finance Banking Landing page
                         </h3>
-                        <p className="mt-1 w-[331px] text-body text-[14px] font-normal leading-[160%] line-clamp-1">
+                        <p className=" mt-1 lg:max-w-[331px] max-w-[160px]  text-body text-[14px] font-normal leading-[160%] line-clamp-1">
                           In our portfolio section, you'll embark on a visual
                           journey through a meticulously curated gallery that
                           represents.
                         </p>
+                        {/* <p className="block lg:hidden mt-1 w-[331px] text-body text-[14px] font-normal leading-[160%]">
+                          In our portfolio section.
+                        </p> */}
                       </div>
 
                       {/* Icon with gradient  */}
-                      <div className="flex p-[16px] justify-center items-center gap-2.5 rounded-[12px] bg-gradient-to-r from-[#5F90F0] to-[#185AD9]">
+                      <div className="flex lg:p-[16px] p-[8px] justify-center items-center gap-2.5 lg:rounded-[12px] rounded-[8px] bg-gradient-to-r from-[#5F90F0] to-[#185AD9]">
                         <Image
                           src="/icons/send-white-arrow.svg"
                           alt="View project"
                           width={24}
                           height={24}
-                          className="flex-shrink-0"
+                          className="flex-shrink-0 lg:w-[24px] lg:h-[24px] w-[20px] h-[20px]"
                         />
                       </div>
                     </div>
@@ -129,9 +132,11 @@ const PortfolioSlider = () => {
 
             <div className="flex items-center">
               <span className="text-[18.903px] font-normal text-secondary">
-                01
+              {String(currentSlide + 1).padStart(2, "0")}
               </span>
-              <span className="text-[11.027px] text-body">/06</span>
+              <span className="text-[11.027px] text-body">
+              /{String(slides.length).padStart(2, "0")}
+              </span>
             </div>
 
             <button
