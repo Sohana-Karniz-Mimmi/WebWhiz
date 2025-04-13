@@ -51,7 +51,7 @@ const Skills = () => {
         </div>
 
         {/* Box */}
-        <div className="w-full max-w-[531px] h-[124px] p-[32px] rounded-[12px] bg-gradient-to-r from-primary-start to-primary-end flex items-center justify-between absolute -bottom-[71px] left-[74px] -right-[51px]">
+        {/* <div className="w-full max-w-[531px] h-[124px] p-[32px] rounded-[12px] bg-gradient-to-r from-primary-start to-primary-end flex items-center justify-between absolute -bottom-[71px] left-[74px] -right-[51px]">
           {stats.map((stat, index) => (
             <>
               <div key={index} className="text-center w-full ">
@@ -67,24 +67,24 @@ const Skills = () => {
               )}
             </>
           ))}
-        </div>
-        {/* <div className="w-full max-w-[531px] h-[124px] p-[32px] rounded-[12px] bg-gradient-to-r from-primary-start to-primary-end flex items-center justify-between absolute -bottom-[71px] left-[74px] -right-[51px]">
+        </div> */}
+        <div className="w-full max-w-[531px] h-[124px] p-[32px] rounded-[12px] bg-gradient-to-r from-primary-start to-primary-end flex items-center justify-between absolute -bottom-[71px] left-[74px] -right-[51px]">
           {stats.map((stat, index) => (
             <div key={index} className="flex items-center gap-[32px]">
               <div className="text-center">
-                <p className="text-white text-[24px] font-bold leading-[140%]">
+                <h2 className="text-white text-[24px] font-bold leading-[140%]">
                   {stat.value}
-                </p>
-                <p className="text-white/80 text-[15px] font-normal leading-[160%]">
+                </h2>
+                <p className="text-white/80 text-[16px] font-normal leading-[160%]">
                   {stat.label}
                 </p>
               </div>
               {index < stats.length - 1 && (
-                <div className="w-[2px] h-[60px] rounded-[16px] bg-[rgba(226,244,234,0.5)] mr-[32px]" />
+                <div className="w-[2px] h-[60px] rounded-[16px] bg-[rgba(226,244,234,0.5)] mr-[25px]" />
               )}
             </div>
           ))}
-        </div> */}
+        </div>
       </div>
 
       {/* Image for Tablet and mobile*/}
@@ -114,15 +114,15 @@ const Skills = () => {
           {stats.map((stat, index) => (
             <div key={index} className="flex items-center gap-[16px]">
               <div className="text-center">
-                <p className="text-white text-[16px] font-bold leading-[150%]">
+                <h2 className="text-white text-[16px] font-bold leading-[150%]">
                   {stat.value}
-                </p>
-                <p className="text-[rgba(255,255,255,0.80)] md:text-[11px] text-[10px] font-normal leading-[160%]">
+                </h2>
+                <p className="text-[rgba(255,255,255,0.80)] text-[12px] font-normal leading-[160%]">
                   {stat.label}
                 </p>
               </div>
               {index < stats.length - 1 && (
-                <div className="w-[2px] h-[49px] rounded-[16px] bg-[rgba(226,244,234,0.5)] mr-[16px]" />
+                <div className="w-[2px] h-[49px] rounded-[16px] bg-[rgba(226,244,234,0.5)] mr-[10px]" />
               )}
             </div>
           ))}
