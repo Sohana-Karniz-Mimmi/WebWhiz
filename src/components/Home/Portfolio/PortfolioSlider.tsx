@@ -6,13 +6,13 @@ import { useState } from "react";
 const PortfolioSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
   const slides = [
-    "/images/slider/portfolio-silder1.png",
+    "/images/slider/portfolio-silder1.webp",
     "/images/slider/portfolio-silder2.png",
     {
       main: "/images/slider/portfolio-silder3.png",
       overlay: "/images/slider/portfolio-silder3-top.png",
     },
-    "/images/slider/portfolio-silder4.png",
+    "/images/slider/portfolio-silder4.webp",
   ];
 
   const nextSlide = () => {
@@ -63,7 +63,7 @@ const PortfolioSlider = () => {
                     </div>
 
                     {/* Content Box */}
-                    <div className="absolute left-6 bottom-6 right-5 flex p-[16px] items-center gap-[87px] rounded-[16px] bg-white z-20">
+                    <div className="absolute left-6 bottom-6 right-5 flex px-[16px] lg:py-[16px] py-[8px] items-center lg:gap-[87px] rounded-[16px] bg-white z-20 lg:max-w[506px] md:max-w[327pxpx]">
                       <div className="flex-1">
                         <h3 className="text-[20px] font-bold leading-[150%] xl:pl-[2px]">
                           Finance Banking Landing page

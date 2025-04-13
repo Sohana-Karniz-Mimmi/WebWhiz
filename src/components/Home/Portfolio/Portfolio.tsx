@@ -114,7 +114,7 @@ const Portfolio = () => {
           </div>
 
           {/* Tabs */}
-          <div className="flex gap-6 md:mt-[16px] mt-[24px] xl:pl-[3px] overflow-x-auto pb-2">
+          <div className="flex gap-6 md:mt-[16px] mt-[24px] xl:pl-[3px] overflow-x-auto">
             {tabs.map((tab) => (
               <button
                 key={tab}
