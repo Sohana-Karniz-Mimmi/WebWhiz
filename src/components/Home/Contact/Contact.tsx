@@ -9,9 +9,11 @@ const Contact = () => {
       <div className="max-w-[1290px] mx-auto xl:mx-0 xl:ml-auto px-[24px] md:px-[32px] xl:px-0">
         <div className="flex md:flex-row flex-col-reverse gap-[24px] xl:gap-[80px] justify-between ">
           {/* Contact Form */}
-          <div className="w-[340px] md:mx-0 mx-auto h-[409px] xl:w-[456px] xl:h-[462px] xl:mt-[26px] md:mt-0 mt-[124px]">
+          <div className="md:w-[340px] w-[327px] sm:w-full md:mx-0 mx-auto h-[409px] xl:w-[456px] xl:h-[462px] xl:mt-[26px] md:mt-0 mt-[124px]">
             {/* Title */}
-            <Text variant="title" className="mx-0 text-left">Contact Us</Text>
+            <Text variant="title" className="mx-0 text-left">
+              Contact Us
+            </Text>
             {/* description */}
             <div className="flex gap-[12px] xl:mt-[12px] mt-[8px]">
               <VerticalDivider className="w-[4px] h-[52px]" />
@@ -66,7 +68,7 @@ const Contact = () => {
 
           {/*Image */}
           <div className="max-w-[754px] relative mt-[40px]">
-            <div className="relative w-[327px] md:mx-0 mx-auto h-[263px] xl:w-[590px] xl:h-[475px] rounded-l-[16px]">
+            <div className="relative w-[327px] sm:w-full md:mx-0 mx-auto h-[263px] xl:w-[590px] xl:h-[475px] rounded-l-[16px]">
               <Image
                 src="/images/contact.png"
                 alt="Contact"
