@@ -9,9 +9,7 @@ import ServicesCard from "./ServicesCard";
 const Services = () => {
   return (
     <section className="relative max-w-[1440px] lg:h-[992px] md:h-[684px] h-[1174px] w-full mx-auto overflow-hidden">
-      {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
-        {/* Main Square Background */}
         <div className="relative max-w-[1440px] lg:h-[992px] md:h-[684px] h-[1174px] flex-shrink-0 mx-auto bg-[rgba(24,90,217,0.04)]">
           
           {/* Left Triangle */}
@@ -95,7 +93,7 @@ const Services = () => {
         </div>
       </div>
 
-      {/* Content Container */}
+      {/* Content */}
       <div className="lg:py-[80px] md:py-[32px] py-[24px]">
         <div className="custom_container">
           <Text className="xl:pl-1" variant="caption">
