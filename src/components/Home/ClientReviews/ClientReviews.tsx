@@ -1,41 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image"; // Reuse the pagination component we created earlier
+import Image from "next/image";
 import PaginationControls from "@/ui/PaginationControls";
 import Text from "@/ui/Text";
 import VerticalDivider from "@/ui/VerticalDivider";
+import { reviews } from "@/mock/reviews";
 
 const ClientReviews: React.FC = () => {
   const [currentReview, setCurrentReview] = useState<number>(0);
-
-  const reviews = [
-    {
-      id: 1,
-      name: "Maria Sarapavoo",
-      role: "Whistleblower and privacy advocate",
-      rating: 4.5,
-      comment:
-        "The team at WebWhiz consistently delivered outstanding results surpassing our expectations in",
-    },
-    {
-      id: 2,
-      name: "Jane Smith",
-      role: "Marketing Director",
-      rating: 4.5,
-      comment:
-        "The team at WebWhiz consistently delivered outstanding results surpassing our expectations in",
-    },
-    {
-      id: 3,
-      name: "Robert Johnson",
-      role: "Product Manager",
-      rating: 4.5,
-      comment:
-        "The team at WebWhiz consistently delivered outstanding results surpassing our expectations in",
-    },
-  ];
-
   const nextReview = () => {
     setCurrentReview((prev) => (prev + 1) % reviews.length);
   };
@@ -46,24 +19,25 @@ const ClientReviews: React.FC = () => {
 
   return (
     <div className="max-w-[1440px] mx-auto">
-      <div className="max-w-[1290px] py-[76px] flex items-end gap-[32px]">
-        {/* Left Side - Content and Images */}
+      <div className="max-w-[1290px] xl:py-[76px] py-[42px] flex xl:flex-row flex-col xl:items-end md:gap-[32px] gap-[24px]">
+        {/* Content and Images */}
         <div className="flex-1 relative">
-          <div className="max-w-[360px] absolute left-[150px]">
-            <Text variant="title">Client Reviews</Text>
+          <div className="md:max-w-[360px] sm:max-w-full max-w-[327px] md:absolute md:left-[150px] md:px-0 px-[24px] md:pb-0 pb-[15px]">
+          <Text variant="title" className="mx-0 text-left">Client Reviews</Text>
+
             {/* description */}
-            <div className="flex gap-[12px] mt-[16px]">
+            <div className="flex gap-[12px] xl:mt-[16px] mt-[8px]">
               <VerticalDivider className="w-[4px] h-[52px]" />
-              <Text className="md:max-w-[314px] w-full xl:pl-[2px]s">
+              <Text className="md:max-w-[314px] max-w-[327px] w-full xl:pl-[2px] md:!h-[52px] h-[52px] text-[16px]">
                 The team at consistently delivered outstanding surpassing
                 expectations
               </Text>
             </div>
           </div>
 
-          <div className="flex gap-[32px] items-end">
+          <div className="flex xl:gap-[32px] md:gap-[24px] gap-[16px] items-end xl:pr-0 md:pr-[30px] pr-[24px]">
             {/* First Image */}
-            <div className="w-[216px] h-[212px] rounded-l-none rounded-r-[16px] overflow-hidden">
+            <div className="w-[126px] h-[141px] md:w-[216px] md:h-[249px] xl:h-[212px] rounded-l-none rounded-r-[16px] overflow-hidden">
               <Image
                 src="/images/review1.png"
                 alt="Client Review 1"
@@ -74,7 +48,7 @@ const ClientReviews: React.FC = () => {
             </div>
 
             {/* Second Image */}
-            <div className="w-[216px] h-[212px] rounded-[16px] overflow-hidden">
+            <div className="w-[126px] h-[141px] md:w-[216px] md:h-[249px] xl:h-[212px] rounded-[16px] overflow-hidden">
               <Image
                 src="/images/review2.png"
                 alt="Client Review 2"
@@ -85,7 +59,7 @@ const ClientReviews: React.FC = () => {
             </div>
 
             {/* Third Image */}
-            <div className="w-[306px] h-[401px] rounded-[16px] overflow-hidden">
+            <div className="w-[135px] h-[176.912px] md:w-[306px] md:h-[401px] rounded-[16px] overflow-hidden">
               <Image
                 src="/images/review3.png"
                 alt="Client Review 3"
@@ -97,12 +71,18 @@ const ClientReviews: React.FC = () => {
           </div>
         </div>
 
-        {/* Right Side - Reviews and Rating */}
-        <div className="flex-1 flex flex-col">
-          {/* Pagination at the top */}
-          <div className="mb-[16px] flex justify-end">
+        {/*  Reviews and Rating */}
+        <div className="flex-1 flex lg:flex-col flex-col-reverse xl:px-0 md:px-[32px] px-[24px] lg:gap-[16px] md:gap-[24px] gap-[16px]">
+          {/* Pagination */}
+          <div className="flex justify-end">
             <PaginationControls
               currentIndex={currentReview}
+              separatorTextClass={
+                "lg:text-body md:text-caption text-body text-[11.027px]"
+              }
+              indexTextClass={
+                "lg:text-secondary md:text-caption text-secondary text-[18.903px] font-normal"
+              }
               totalItems={reviews.length}
               onPrev={prevReview}
               onNext={nextReview}
@@ -110,14 +90,13 @@ const ClientReviews: React.FC = () => {
           </div>
 
           {/* Review Box */}
-          <div className="flex flex-col p-6 gap-4 rounded-xl border border-[#5F90F0] bg-white">
-            {/* Name, Role and Rating */}
+          <div className="flex flex-col md:p-[24px] p-[16px] gap-[16px] rounded-[12px] border border-primary-start bg-white">
             <div className="flex justify-between items-center w-full">
               <div>
                 <h3 className="text-[20px] font-semibold leading-[150%]">
                   {reviews[currentReview].name}
                 </h3>
-                <p className="text-[#64656D] text-[14px] font-normal leading-[160%]">
+                <p className="text-body text-[14px] font-normal leading-[160%]">
                   {reviews[currentReview].role}
                 </p>
               </div>
@@ -146,8 +125,17 @@ const ClientReviews: React.FC = () => {
             </div>
 
             {/* Review Text */}
-            <p className=" text-body text-[16px] font-normal leading-[160%]">
+            <p className="hidden lg:block text-body text-[16px] font-normal leading-[160%]">
               {reviews[currentReview].comment}
+            </p>
+            <p className="hidden md:block lg:hidden max-w-[656px] h-[56px] text-body text-[16px] font-normal leading-[160%] line-clamp-2">
+              The team consistently delivered outstanding results surpassing our
+              expectations in terms of creativity strategy Graphic design is a
+              dynamic and creative field that blends artistry with technology to
+              visually communicate ideas messages and concepts.
+            </p>
+            <p className="block md:hidden max-w-[295px] h-[54px] text-body text-[16px] font-normal leading-[160%] line-clamp-2">
+            The team at WebWhiz consistently delivered outstanding results surpassing our expectations in 
             </p>
           </div>
         </div>

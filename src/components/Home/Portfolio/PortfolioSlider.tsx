@@ -74,7 +74,7 @@ const PortfolioSlider = () => {
                     </div>
 
                     {/* Icon with gradient  */}
-                    <div className="flex lg:p-[16px] p-[8px] justify-center items-center gap-2.5 lg:rounded-[12px] rounded-[8px] bg-gradient-to-r from-[#5F90F0] to-[#185AD9]">
+                    <div className="flex lg:p-[16px] p-[8px] justify-center items-center gap-2.5 lg:rounded-[12px] rounded-[8px] bg-gradient-to-r from-primary-start to-[#185AD9]">
                       <Image
                         src="/icons/send-white-arrow.svg"
                         alt="View project"
@@ -102,8 +102,8 @@ const PortfolioSlider = () => {
               onClick={() => setCurrentSlide(index)}
               className={`w-[50px] h-[4px] rounded-[3px] ${
                 currentSlide === index
-                  ? "bg-gradient-to-r from-[#5F90F0] to-[#185AD9]"
-                  : "bg-gradient-to-r from-[#5F90F0]/10 to-[#185AD9]/10"
+                  ? "bg-gradient-to-r from-primary-start to-[#185AD9]"
+                  : "bg-gradient-to-r from-primary-start/10 to-[#185AD9]/10"
               }`}
             />
           ))}
@@ -114,7 +114,7 @@ const PortfolioSlider = () => {
           <div className="flex gap-[12px]">
             <button
               onClick={prevSlide}
-              className="flex w-[32px] h-[32px] justify-center items-center rounded-[80px] border border-[#5F90F0]"
+              className="flex w-[32px] h-[32px] justify-center items-center rounded-[80px] border border-primary-start"
             >
               <Image
                 src="/icons/arrow-left.svg"
@@ -135,7 +135,7 @@ const PortfolioSlider = () => {
 
             <button
               onClick={nextSlide}
-              className="flex w-[32px] h-[32px] justify-center items-center rounded-[80px] bg-gradient-to-r from-[#5F90F0] to-[#185AD9]"
+              className="flex w-[32px] h-[32px] justify-center items-center rounded-[80px] bg-gradient-to-r from-primary-start to-[#185AD9]"
             >
               <Image
                 src="/icons/arrow-right.svg"
@@ -158,8 +158,8 @@ const PortfolioSlider = () => {
                 onClick={() => setCurrentSlide(index)}
                 className={`w-[50px] h-[4px] rounded-[3px] ${
                   currentSlide === index
-                    ? "bg-gradient-to-r from-[#5F90F0] to-[#185AD9]"
-                    : "bg-gradient-to-r from-[#5F90F0]/10 to-[#185AD9]/10"
+                    ? "bg-gradient-to-r from-primary-start to-[#185AD9]"
+                    : "bg-gradient-to-r from-primary-start/10 to-[#185AD9]/10"
                 }`}
               />
             ))}
@@ -170,7 +170,7 @@ const PortfolioSlider = () => {
             <div className="flex gap-[12px]">
               <button
                 onClick={prevSlide}
-                className="flex w-[32px] h-[32px] justify-center items-center rounded-[80px] border border-[#5F90F0]"
+                className="flex w-[32px] h-[32px] justify-center items-center rounded-[80px] border border-primary-start"
               >
                 <Image
                   src="/icons/arrow-left.svg"
@@ -191,7 +191,7 @@ const PortfolioSlider = () => {
 
               <button
                 onClick={nextSlide}
-                className="flex w-[32px] h-[32px] justify-center items-center rounded-[80px] bg-gradient-to-r from-[#5F90F0] to-[#185AD9]"
+                className="flex w-[32px] h-[32px] justify-center items-center rounded-[80px] bg-gradient-to-r from-primary-start to-[#185AD9]"
               >
                 <Image
                   src="/icons/arrow-right.svg"

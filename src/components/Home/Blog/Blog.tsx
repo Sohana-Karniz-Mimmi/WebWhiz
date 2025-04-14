@@ -49,8 +49,8 @@ const Blog = () => {
                 onClick={() => setCurrentSlide(index)}
                 className={`w-[50px] h-[4px] rounded-[3px] ${
                   currentSlide === index
-                    ? "bg-gradient-to-r from-[#5F90F0] to-[#185AD9]"
-                    : "bg-gradient-to-r from-[#5F90F0]/10 to-[#185AD9]/10"
+                    ? "bg-gradient-to-r from-primary-start to-[#185AD9]"
+                    : "bg-gradient-to-r from-primary-start/10 to-[#185AD9]/10"
                 }`}
               />
             ))}

@@ -11,7 +11,7 @@ const ServicesCard = () => {
           className={`flex w-full  md:max-w-[340px] h-[226px] lg:max-w-[450px] xl:max-w-[554px] xl:h-[311px] p-[24px] xl:p-[32px] flex-col items-start rounded-[12px] xl:rounded-[32px] bg-white 
       ${
         index === 1
-          ? "border border-[#5F90F0] shadow-[ -12px_24px_56px_0px_rgba(4,_45,_21,_0.08)]"
+          ? "border border-primary-start shadow-[ -12px_24px_56px_0px_rgba(4,_45,_21,_0.08)]"
           : ""
       }`}
         >
@@ -21,7 +21,7 @@ const ServicesCard = () => {
             </div>
 
             {/* send Icon */}
-            <div className="flex p-[12px] justify-center items-center rounded-[42px] bg-gradient-to-r from-[#5F90F0] to-[#185AD9]">
+            <div className="flex p-[12px] justify-center items-center rounded-[42px] bg-gradient-to-r from-primary-start to-[#185AD9]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
