@@ -19,8 +19,8 @@ const Blog = () => {
   };
 
   return (
-    <div className="custom_container py-12">
-      <div className="flex items-center gap-[70px]">
+    <div className="custom_container xl:pt-[212px] py-[42px] relative min-h-[586px]">
+      <div className="flex items-center gap-[70px] relative">
         {/* Image */}
         <div className="relative flex-shrink-0">
           {/* Background */}

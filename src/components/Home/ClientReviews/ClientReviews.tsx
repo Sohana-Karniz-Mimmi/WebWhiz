@@ -22,7 +22,7 @@ const ClientReviews: React.FC = () => {
       <div className="max-w-[1290px] xl:py-[76px] py-[42px] flex xl:flex-row flex-col xl:items-end md:gap-[32px] gap-[24px]">
         {/* Content and Images */}
         <div className="flex-1 relative">
-          <div className="md:max-w-[360px] sm:max-w-full max-w-[327px] md:absolute md:left-[150px] md:px-0 px-[24px] md:pb-0 pb-[15px]">
+          <div className="md:max-w-[360px] sm:max-w-full max-w-[327px] md:absolute lg:left-[150px] md:left-[40px] md:px-0 px-[24px] md:pb-0 pb-[15px]">
             <Text variant="title" className="mx-0 text-left">
               Client Reviews
             </Text>
