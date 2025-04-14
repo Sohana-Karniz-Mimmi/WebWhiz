@@ -23,7 +23,9 @@ const ClientReviews: React.FC = () => {
         {/* Content and Images */}
         <div className="flex-1 relative">
           <div className="md:max-w-[360px] sm:max-w-full max-w-[327px] md:absolute md:left-[150px] md:px-0 px-[24px] md:pb-0 pb-[15px]">
-          <Text variant="title" className="mx-0 text-left">Client Reviews</Text>
+            <Text variant="title" className="mx-0 text-left">
+              Client Reviews
+            </Text>
 
             {/* description */}
             <div className="flex gap-[12px] xl:mt-[16px] mt-[8px]">
@@ -37,7 +39,7 @@ const ClientReviews: React.FC = () => {
 
           <div className="flex xl:gap-[32px] md:gap-[24px] gap-[16px] items-end xl:pr-0 md:pr-[30px] pr-[24px]">
             {/* First Image */}
-            <div className="w-[126px] h-[141px] md:w-[216px] md:h-[249px] xl:h-[212px] rounded-l-none rounded-r-[16px] overflow-hidden">
+            <div className="w-[126px] h-[141px] md:w-[216px] md:h-[249px] xl:h-[212px] rounded-l-none md:rounded-r-[16px] rounded-r-[8px] overflow-hidden">
               <Image
                 src="/images/review1.png"
                 alt="Client Review 1"
@@ -48,7 +50,7 @@ const ClientReviews: React.FC = () => {
             </div>
 
             {/* Second Image */}
-            <div className="w-[126px] h-[141px] md:w-[216px] md:h-[249px] xl:h-[212px] rounded-[16px] overflow-hidden">
+            <div className="w-[126px] h-[141px] md:w-[216px] md:h-[249px] xl:h-[212px] md:rounded-[16px] rounded-[8px] overflow-hidden">
               <Image
                 src="/images/review2.png"
                 alt="Client Review 2"
@@ -59,7 +61,7 @@ const ClientReviews: React.FC = () => {
             </div>
 
             {/* Third Image */}
-            <div className="w-[135px] h-[176.912px] md:w-[306px] md:h-[401px] rounded-[16px] overflow-hidden">
+            <div className="w-[135px] h-[176.912px] md:w-[306px] md:h-[401px] md:rounded-[16px] rounded-[8px] overflow-hidden">
               <Image
                 src="/images/review3.png"
                 alt="Client Review 3"
@@ -135,7 +137,8 @@ const ClientReviews: React.FC = () => {
               visually communicate ideas messages and concepts.
             </p>
             <p className="block md:hidden max-w-[295px] h-[54px] text-body text-[16px] font-normal leading-[160%] line-clamp-2">
-            The team at WebWhiz consistently delivered outstanding results surpassing our expectations in 
+              The team at WebWhiz consistently delivered outstanding results
+              surpassing our expectations in
             </p>
           </div>
         </div>
