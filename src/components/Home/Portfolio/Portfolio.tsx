@@ -18,11 +18,11 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="relative max-w-[1440px] lg:h-[786px] md:h-[617px] h-[592px] w-full mx-auto overflow-hidden">
+    <section className="relative max-w-[1440px] w-full mx-auto overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 w-full">
         {/* Main Square Background */}
-        <div className="relative max-w-[1440px] lg:h-[786px] md:h-[617px] h-[592px] flex-shrink-0 mx-auto bg-[rgba(24,90,217,0.04)]">
+        <div className="relative w-full lg:h-[786px] md:h-[617px] h-[592px] flex-shrink-0 mx-auto bg-[rgba(24,90,217,0.04)]">
           <Image
             src="/icons/square.svg"
             alt="Background pattern"
