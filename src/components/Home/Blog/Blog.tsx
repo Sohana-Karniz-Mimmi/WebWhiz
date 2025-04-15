@@ -19,7 +19,7 @@ const Blog = () => {
   };
 
   return (
-    <div className="custom_container xl:pt-[212px] md:pt-[155px] pt-[60px] pb-[42px] relative">
+    <section className="custom_container xl:pt-[212px] md:pt-[155px] pt-[60px] pb-[42px] relative">
       {/* Mobile: Title First */}
       <div className="md:hidden flex flex-col">
         <div className="text-center mb-[8px]">
@@ -124,7 +124,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
