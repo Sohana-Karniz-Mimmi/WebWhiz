@@ -18,7 +18,7 @@ const ClientReviews: React.FC = () => {
   };
 
   return (
-    <div className="max-w-[1440px] mx-auto">
+    <section className="max-w-[1440px] mx-auto">
       <div className="max-w-[1290px] xl:py-[76px] py-[42px] flex xl:flex-row flex-col xl:items-end md:gap-[32px] gap-[24px]">
         {/* Content and Images */}
         <div className="flex-1 relative">
@@ -143,7 +143,7 @@ const ClientReviews: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

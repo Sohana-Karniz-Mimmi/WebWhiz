@@ -5,7 +5,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="max-w-[1440px] mx-auto">
+    <section className="max-w-[1440px] mx-auto">
       <div className="max-w-[1290px] mx-auto xl:mx-0 xl:ml-auto px-[24px] md:px-[32px] xl:px-0">
         <div className="flex md:flex-row flex-col-reverse gap-[24px] xl:gap-[80px] justify-between ">
           {/* Contact Form */}
@@ -373,7 +373,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

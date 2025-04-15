@@ -8,9 +8,9 @@ import ServicesCard from "./ServicesCard";
 
 const Services = () => {
   return (
-    <section className="relative max-w-[1440px] lg:h-[992px] md:h-[684px] h-[1174px] w-full mx-auto overflow-hidden">
-      <div className="absolute inset-0 -z-10">
-        <div className="relative max-w-[1440px] lg:h-[992px] md:h-[684px] h-[1174px] flex-shrink-0 mx-auto bg-[rgba(24,90,217,0.04)]">
+    <section className="relative max-w-[1440px] w-full mx-auto overflow-hidden">
+      <div className="absolute inset-0 -z-10 w-full">
+        <div className="relative w-full xl:h-[992px] lg:h-[800px] md:h-[684px] h-[1174px] flex-shrink-0 mx-auto bg-[rgba(24,90,217,0.04)]">
           
           {/* Left Triangle */}
           <div className="md:block hidden absolute bottom-0 lg:left-0 -left-[100px] lg:w-[808px] lg:h-[744px] md:w-[569px] h-[529px] flex-shrink-0">

@@ -8,7 +8,7 @@ import Services from "@/components/Services/Services";
 
 export default function Home() {
   return (
-    <main className="w-full min-h-screen">
+    <main className="w-full ">
       <Hero />
       <Portfolio />
       <About />

@@ -17,7 +17,7 @@ const Skills = () => {
   return (
     <div className="flex flex-col md:items-start items-center md:flex-row lg:gap-[32px] gap-[24px] md:mt-[48px] mt-[30px]">
       {/* Skills */}
-      <div className="w-full max-w-[327px] md:max-w-[340px] lg:max-w-[554px] p-[30px] lg:p-[50px] rounded-[12px] bg-[rgba(24,90,217,0.04)] md:flex-1">
+      <div className="w-full max-w-[327px] sm:max-w-full md:max-w-[340px] lg:max-w-[554px] p-[30px] lg:p-[50px] rounded-[12px] bg-[rgba(24,90,217,0.04)] md:flex-1">
         {skills.map((skill, index) => (
           <div key={index} className="mb-[16px] last:mb-0 xl:pl-[2px]">
             <h3 className="text-[16px] font-semibold leading-[150%] mb-[4px]">
@@ -88,7 +88,7 @@ const Skills = () => {
       </div>
 
       {/* Image for Tablet and mobile*/}
-      <div className="w-full max-w-[327px] md:max-w-[340px] h-[256px] bg-[#F4FBF7] relative md:flex-1 flex lg:hidden items-center overflow-visible">
+      <div className="w-full max-w-[327px] sm:max-w-full md:max-w-[340px] h-[256px] bg-[#F4FBF7] relative md:flex-1 flex lg:hidden items-center overflow-visible">
         {/* Mobile */}
         <div className="md:hidden w-full h-full">
           <Image
